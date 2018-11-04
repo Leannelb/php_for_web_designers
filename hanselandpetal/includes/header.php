@@ -1,6 +1,21 @@
+<?php
+$siteRoot = '/hanselandpetal'; //this is here as whilst in dev mode the root is 'localhost' once deployed the root will then be in 
+?>
 <!-- Header aka nav section is called via require as without it, the page is useless  -->
+<!-- Convert all the links inside the include file as links relative to root, therefore starting with a / -->
+<!-- Convert to site root relative links, therefore starting with a / and including a full route-->
+<!-- This works fine if using a virtual host OR the top level of your remote server, -->
+<!-- However, if your testing folder is in a subfolder of the web servers root folder you need to adopt a differnt approach
+ Because I'm working on an apache server the site root is actually localhost, NOT hanselandpetal.
+ Therefore for the links to route correctly to the right places, hanselandpetal must be part of the route-->
+<!-- One thing I could do is add hanselandpetal to ever link i.e. /hanselandpetal/ probelm arises when uploading to the remote server then
+you have ot go back and take this out from everwhere, the solution is then to make a var at the top of the php include file holding this 
+route which, when transferred to the server then can be deleted like this: locally: $siteRoot = '/hanselandpetal';  then on upload $siteRoot = ''; and then it works  
+
+ -->
+
  <div id="header" role="banner">
-        <h1 id="logo"><a href="index.php"><img src="images/logo.png" alt="Hansel and Petal" height="124" width="207"></a></h1>
+        <h1 id="logo"><a href="/exercises/ch02/02_01/hanselandpetal/images/hanselandpetal/index.php"><img src="/exercises/ch02/02_01/hanselandpetal/images/hanselandpetal/logo.png" alt="Hansel and Petal" height="124" width="207"></a></h1>
         <div class="inner">
             <ul id="quick_links" class="reset menu">
                 <li><a href="#">My Account</a></li>
@@ -18,7 +33,7 @@
     </div>
     <div id="nav_main" role="navigation" class="reset menu pull_out">
         <ul>
-            <li> <a href="arrangements.php" class="parent"><span>Arrangements</span></a>
+            <li> <a href="arrangements.php" class="parent"><span>Hello</span></a>
                 <div>
                     <ul>
                         <li> <a href="#">Our Most Popular Flowers</a>
