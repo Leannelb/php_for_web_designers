@@ -12,11 +12,8 @@
     <div id="header" role="banner">
         <h1 id="logo"><a href="index.php"><img src="images/logo.png" alt="Hansel and Petal" height="124" width="207"></a></h1>
         <div class="inner">
-            <ul id="quick_links" class="reset menu">
-                <li><a href="#">My Account</a></li>
-                <li><a href="order.php">View My Order</a></li>
-                <li><a href="#">Customer Service</a></li>
-            </ul>
+        <?php include 'includes/quick_links.php';?>
+
             <form action="#" method="get" id="quick_search" role="search">
                 <input id="quickSearch" class="text white" placeholder="Find the perfect flowers or plants…" type="search">
                 <span class="btn_icon icon_search">
