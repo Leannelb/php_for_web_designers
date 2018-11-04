@@ -11,11 +11,14 @@ $siteRoot = '/hanselandpetal'; //this is here as whilst in dev mode the root is 
 <!-- One thing I could do is add hanselandpetal to ever link i.e. /hanselandpetal/ probelm arises when uploading to the remote server then
 you have ot go back and take this out from everwhere, the solution is then to make a var at the top of the php include file holding this 
 route which, when transferred to the server then can be deleted like this: locally: $siteRoot = '/hanselandpetal';  then on upload $siteRoot = ''; and then it works  
+General Directories Information:
+Can define any route in a file system via the full path
 
+i.e
  -->
 
  <div id="header" role="banner">
-        <h1 id="logo"><a href="/exercises/ch02/02_01/hanselandpetal/images/hanselandpetal/index.php"><img src="/exercises/ch02/02_01/hanselandpetal/images/hanselandpetal/logo.png" alt="Hansel and Petal" height="124" width="207"></a></h1>
+        <h1 id="logo"><a href="exercises/ch02/02_01/hanselandpetal/index.php"><img src="/exercises/ch02/02_01/hanselandpetal/logo.png" alt="Hansel and Petal" height="124" width="207"></a></h1>
         <div class="inner">
             <ul id="quick_links" class="reset menu">
                 <li><a href="#">My Account</a></li>
