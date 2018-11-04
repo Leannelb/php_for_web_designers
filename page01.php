@@ -11,5 +11,12 @@
 <p>This text is in the original HTML.</p>
 <?php include 'includes/external.php'; ?>
 <p>Now back to the original HTML. <a href="page02.php">Go to page 2</a>.</p>
+<h1>Types of server side includes: </h1>
+<ul>
+<li>include</li>
+<li>require</li>
+<li>include_once</li>
+<li>require_once</li>
+</ul>
 </body>
 </html>
