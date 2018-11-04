@@ -1,3 +1,4 @@
+<!-- Header aka nav section is called via require as without it, the page is useless  -->
  <div id="header" role="banner">
         <h1 id="logo"><a href="index.php"><img src="images/logo.png" alt="Hansel and Petal" height="124" width="207"></a></h1>
         <div class="inner">

@@ -1,3 +1,4 @@
+<!-- whereas the footer is called as an include as if its missing, the whole site shouldnt break  -->
 <div id="footer">
         <div class="row clearfix">
             <ul class="reset menu hover">

@@ -9,6 +9,7 @@
 
 <body class="no_col_2">
 <div id="site">
+<!-- Header aka nav section is called via require as without it, the page is useless  -->
     <?php require 'includes/header.php'?>
     <div id="content">
         <div id="breadcrumbs" class="reset menu">
@@ -249,7 +250,8 @@
             </form>
         </div>
     </div>
-    <?php include 'includes footer.php'?>
+    <?php include 'includes/footer.php'?>
+    <!-- whereas the footer is called as an include as if its missing, the whole site shouldnt break  -->
 </div>
 <script src="js/jquery-1.10.2.min.js"></script> 
 <script src="js/scripts.js"></script>
