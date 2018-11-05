@@ -17,7 +17,13 @@ $features = array(
 <body>
 <h1>Using foreach with an Associative Array</h1>
 <h2>Values Only</h2>
-
+<?php 
+foreach ($features AS $feature)
+//to loop through array
+{
+    echo "<p>$feature</p>";
+}
+?>
 <h2>Keys and Values</h2>
 
 </body>
