@@ -21,6 +21,10 @@ Array
     [3] => orchids
     [4] => irisis
 ) -->
+<!--If you try add . form a folder otehr than the one with .git and get the following error: 
+    Another git process seems to be running in this repository
+    Try deleting index.lock file in your .git directory.
+    This worked for me now. -->
 </pre>
 <p>The fourth element is: <?php echo $flowers[3];?></p>
 <!-- Display: The fourth element is: orchids -->
