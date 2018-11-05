@@ -14,9 +14,14 @@ $flowers[] = 'irises';
 <h1>Looping through a Simple Array</h1>
 <ul>
 <?php
-foreach ($flowers as)
+foreach ($flowers AS $flower){
+    echo '<li>'.$flower.'</li>';
+}
 ?>
+<!-- as is actually case insensitive as you can see -->
+<!-- AS represents the array at a specific value in time. It is a temporary variable for the current array item -->
 <!-- foreach loops are specifically for arrays -->
+
 </ul>
 
 </body>
