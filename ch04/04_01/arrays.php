@@ -1,5 +1,7 @@
 <?php $flowers = array('tulips', 'roses', 'daffodills', 'orchids');?>
 <?php $flowers2 = ['tulips', 'roses', 'daffodills', 'orchids'];?>
+<!-- 2 ways to define arrays above -->
+
 <!doctype html>
 <html>
 <head>
