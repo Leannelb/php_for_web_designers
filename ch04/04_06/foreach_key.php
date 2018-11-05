@@ -12,5 +12,12 @@ $flowers[] = 'irises';
 
 <body>
 <h1>Looping through a Simple Array</h1>
+<ul>
+<?php
+foreach ($flowers as)
+?>
+<!-- foreach loops are specifically for arrays -->
+</ul>
+
 </body>
 </html>
