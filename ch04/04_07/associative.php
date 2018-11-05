@@ -18,7 +18,9 @@ $features = array(
 
 <body>
 <h1>Labeling Array Elements</h1>
-<p><?php echo "The tagline for spring is: {$features['spring']}";?></p>
+<p><?php echo "The tagline for spring is: $features['spring']";?></p>
+<!-- Without te {} line now (above.) We get htis error: 
+    Parse error: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /Applications/MAMP/htdocs/exercises/ch02/02_01/ch04/04_07/associative.php on line 21 -->
 <!-- IF you want a double quote in your sting you must include:  {$features['spring']} brackets. Else error  -->
 <!-- This prints the following to the screen: 'spring' => 'It must be spring! The daffodills are here', -->
 
