@@ -18,58 +18,59 @@ $months = [
 ];
 // DID NOT NEED THIS ELSE IF!!!!!!! 
 // COULD JUST HAVE DONE THIS: 
-// <?php echo $altString[$monthNumber-1];
-if($monthNumber == 1 ){
-    $altString = $months[0]; 
-}
-elseif($monthNumber == 2 )
-{
-    $altString = $months[1];
-}
-elseif($monthNumber == 3 )
-{
-    $altString = $months[2]; 
-}
-elseif($monthNumber == 4 )
-{
-    $altString = $months[3]; 
-}
-elseif($monthNumber == 5 )
-{
-    $altString = $months[4]; 
-}
-elseif($monthNumber == 6 )
-{
-    $altString = $months[5]; 
-}
-elseif($monthNumber == 7 )
-{
-    $altString = $months[6]; 
-}
-elseif($monthNumber == 8 )
-{
-    $altString = $months[7]; 
-}
-elseif($monthNumber == 9 )
-{
-    $altString = $months[8]; 
-}
-elseif($monthNumber == 10 )
-{
-    $altString = $months[9]; 
-}
-elseif($monthNumber == 11 )
-{
-    $altString = $months[10]; 
-}
-elseif($monthNumber == 12 )
-{
-    $altString = $months[11]; 
-}
-// $month = string;
-// if($monthNo == 1){
-//     $month = "January special: Cacti galore";
-// }elseif($monthNo == 2 ){
+// // alt="<?php echo [$months-1];" 
+
+// if($monthNumber == 1 ){
+//     $altString = $months[0]; 
+// }
+// elseif($monthNumber == 2 )
+// {
+//     $altString = $months[1];
+// }
+// elseif($monthNumber == 3 )
+// {
+//     $altString = $months[2]; 
+// }
+// elseif($monthNumber == 4 )
+// {
+//     $altString = $months[3]; 
+// }
+// elseif($monthNumber == 5 )
+// {
+//     $altString = $months[4]; 
+// }
+// elseif($monthNumber == 6 )
+// {
+//     $altString = $months[5]; 
+// }
+// elseif($monthNumber == 7 )
+// {
+//     $altString = $months[6]; 
+// }
+// elseif($monthNumber == 8 )
+// {
+//     $altString = $months[7]; 
+// }
+// elseif($monthNumber == 9 )
+// {
+//     $altString = $months[8]; 
+// }
+// elseif($monthNumber == 10 )
+// {
+//     $altString = $months[9]; 
+// }
+// elseif($monthNumber == 11 )
+// {
+//     $altString = $months[10]; 
+// }
+// elseif($monthNumber == 12 )
+// {
+//     $altString = $months[11]; 
+// }
+// // $month = string;
+// // if($monthNo == 1){
+// //     $month = "January special: Cacti galore";
+// // }elseif($monthNo == 2 ){
 //     $month = "February special: Flowers and hearts for Valentines";
 // }elseif($monthNo == 2 ){
 //     $month = "February special: Flowers and hearts for Valentines";
@@ -193,7 +194,7 @@ elseif($monthNumber == 12 )
                         <img src="images/450_2_maidenhair_fern_166585539.jpg" alt="Maidenhair Fern" height="200" width="450"> </a> <a href="#" class="tile border">
                         <p class="overlay">Seasonal Specials</p>
                         <p class="overlay price">Starting at $24.95</p>
-                        <img src="images/special_<?php echo $monthname;?>.jpg" alt="<?php echo $altString?>" height="200" width="450"> </a> </li>
+                        <img src="images/special_<?php echo $monthname;?>.jpg" alt="<?php echo [$months-1];?>" height="200" width="450"> </a> </li>
           <!-- So here the monthname is echoed into the image file path and the image is changed according to the date -->
           </ul>
             </div>
