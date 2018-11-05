@@ -15,7 +15,7 @@ $flowers[] = 'irises';
 <pre>
 <p><?php print_r($flowers); ?></p>
 </pre>
-<?php echo implode(', ' , $flowers);?>
+<ul><li><?php echo implode('</li><li>', $flowers);?></li></ul>
 <!-- echo implode(', ' , $flowers) Prints: tulips, roses, daffodils, orchids, daisies, irises -->
 <!-- ?php echo implode($flowers);Prints tulipsrosesdaffodilsorchidsdaisiesirises -->
 
