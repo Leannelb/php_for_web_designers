@@ -12,7 +12,12 @@ $flowers[] = 'irises';
 
 <body>
 <h1>Joining an Array with implode()</h1>
-<p><?php echo $flowers; ?></p>
+<pre>
+<p><?php print_r($flowers); ?></p>
+</pre>
+<?php echo implode($flowers);?>
+<!-- ?php echo implode($flowers);Prints tulipsrosesdaffodilsorchidsdaisiesirises -->
+
 <!-- Trying to echo an array gives errors -->
 <!-- error is:
 
