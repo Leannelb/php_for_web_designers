@@ -1,9 +1,115 @@
 <?php
 $monthCamel = date('M');
 $monthname = strtolower($monthCamel);
+$monthNumber = date('n');
+$months = [
+    "January special: Cacti galore", 
+    "February special: Flowers and hearts for Valentines", 
+    "March special: Bright red camellias", 
+    "April special: Fresh tulips", 
+    "May special: Beautiful bougainvillea", 
+    "June special: Purple iris", 
+    "July special: Stunning white hydrangeas",
+    "August special: Sunflowers", 
+    "September special: Pink crysanthemums", 
+    "October special: Purple orchids", 
+    "November special: Bonsai with rock", 
+    "December special: Dried flowers for decoration"
+];
+// DID NOT NEED THIS ELSE IF!!!!!!! 
+// COULD JUST HAVE DONE THIS: 
+// <?php echo $altString[$monthNumber-1];
+if($monthNumber == 1 ){
+    $altString = $months[0]; 
+}
+elseif($monthNumber == 2 )
+{
+    $altString = $months[1];
+}
+elseif($monthNumber == 3 )
+{
+    $altString = $months[2]; 
+}
+elseif($monthNumber == 4 )
+{
+    $altString = $months[3]; 
+}
+elseif($monthNumber == 5 )
+{
+    $altString = $months[4]; 
+}
+elseif($monthNumber == 6 )
+{
+    $altString = $months[5]; 
+}
+elseif($monthNumber == 7 )
+{
+    $altString = $months[6]; 
+}
+elseif($monthNumber == 8 )
+{
+    $altString = $months[7]; 
+}
+elseif($monthNumber == 9 )
+{
+    $altString = $months[8]; 
+}
+elseif($monthNumber == 10 )
+{
+    $altString = $months[9]; 
+}
+elseif($monthNumber == 11 )
+{
+    $altString = $months[10]; 
+}
+elseif($monthNumber == 12 )
+{
+    $altString = $months[11]; 
+}
+// $month = string;
+// if($monthNo == 1){
+//     $month = "January special: Cacti galore";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }elseif($monthNo == 2 ){
+//     $month = "February special: Flowers and hearts for Valentines";
+// }
+
+
 // This code will get the month name 3 letter formal i.e. jan.
 // This matches an imaes in the images folder that has the extention of the month also
 // This means the month will change, as it is pulled from the server
+// $jan ="January special: Cacti galore";
+// $feb = February special: Flowers and hearts for Valentines
+// March special: Bright red camellias
+// April special: Fresh tulips
+// May special: Beautiful bougainvillea
+// June special: Purple iris
+// July special: Stunning white hydrangeas
+// August special: Sunflowers
+// September special: Pink crysanthemums
+// October special: Purple orchids
+// November special: Bonsai with rock
+// December special: Dried flowers for decoration
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -87,7 +193,7 @@ $monthname = strtolower($monthCamel);
                         <img src="images/450_2_maidenhair_fern_166585539.jpg" alt="Maidenhair Fern" height="200" width="450"> </a> <a href="#" class="tile border">
                         <p class="overlay">Seasonal Specials</p>
                         <p class="overlay price">Starting at $24.95</p>
-                        <img src="images/special_<?php echo $monthname;?>.jpg" alt="Fresh Tulips" height="200" width="450"> </a> </li>
+                        <img src="images/special_<?php echo $monthname;?>.jpg" alt="<?php echo $altString?>" height="200" width="450"> </a> </li>
           <!-- So here the monthname is echoed into the image file path and the image is changed according to the date -->
           </ul>
             </div>
