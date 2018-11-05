@@ -25,6 +25,7 @@ Array
     Another git process seems to be running in this repository
     Try deleting index.lock file in your .git directory.
     This worked for me now. -->
+    <!-- FIX -->
 </pre>
 <p>The fourth element is: <?php echo $flowers[3];?></p>
 <!-- Display: The fourth element is: orchids -->
