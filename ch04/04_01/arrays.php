@@ -9,6 +9,20 @@
 <head>
 <meta charset="utf-8">
 <title>Basic Arrays</title>
+<pre>
+<?php print_r($flowers)?>
+<!-- The above is how to output the value of a php array to screen -->
+<!-- The pre HTML tags display the array nicer, what I see on screen:
+Array
+(
+    [0] => tulips
+    [1] => roses
+    [2] => daffodills
+    [3] => orchids
+    [4] => irisis
+) -->
+
+</pre>
 <link href="../../styles/exercises.css" rel="stylesheet" type="text/css">
 </head>
 
