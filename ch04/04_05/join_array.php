@@ -15,7 +15,8 @@ $flowers[] = 'irises';
 <pre>
 <p><?php print_r($flowers); ?></p>
 </pre>
-<?php echo implode($flowers);?>
+<?php echo implode(', ' , $flowers);?>
+<!-- echo implode(', ' , $flowers) Prints: tulips, roses, daffodils, orchids, daisies, irises -->
 <!-- ?php echo implode($flowers);Prints tulipsrosesdaffodilsorchidsdaisiesirises -->
 
 <!-- Trying to echo an array gives errors -->
