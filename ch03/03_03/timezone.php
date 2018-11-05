@@ -3,7 +3,12 @@ $day = date('l');
 $time = date('H:i');
 date_default_timezone_set('Europe/Malta');
 $day_HI = date('l');
-$time_HI = date('H:i')
+$time_HI = date('H:i');
+$monthCamel = date('M');
+$monthname = strtolower($monthCamel);
+if(isset($mont)){
+    echo (isset($mont));
+}
 ?>
 <!doctype html>
 <html>
