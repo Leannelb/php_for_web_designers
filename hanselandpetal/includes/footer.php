@@ -1,4 +1,13 @@
 <!-- whereas the footer is called as an include as if its missing, the whole site shouldnt break  -->
+<?php
+$startYear = 2013;
+$thisYear = date('Y');
+if($thisYear>$startYear){
+    $copyright =$startYear . "-" . $thisYear;
+}else{
+    $copyright=$startYear;
+}
+?>
 <div id="footer">
         <div class="row clearfix">
             <ul class="reset menu hover">
@@ -23,7 +32,7 @@
                 <li><a href="#">Terms &amp; Conditions</a></li>
             </ul>
             <img src="images/logo.png" alt="Hansel and Petal" height="124" width="207"> </div>
-        <p id="copyright" class="reset pull_out padding" role="contentinfo"><a href="http://www.ixd.hanselandpetal.com/">© 2013 Hansel and Petal</a></p>
+        <p id="copyright" class="reset pull_out padding" role="contentinfo"><a href="http://www.ixd.hanselandpetal.com/">© <?php echo $copyright;?> Hansel and Petal</a></p>
     <p id="disclaimer">Hansel &amp; Petal is a fictitious brand created by 
         lynda.com solely for the purpose of training. All products and people 
         associated with Hansel &amp; Petal are also fictitious. Any resemblance 

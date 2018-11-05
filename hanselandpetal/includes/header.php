@@ -1,5 +1,6 @@
 <?php
-$siteRoot = '/hanselandpetal'; //this is here as whilst in dev mode the root is 'localhost' once deployed the root will then be in 
+$siteRoot = '/hanselandpetal'; 
+//date_default_timezone_set('Europe/Malta');//this is here as whilst in dev mode the root is 'localhost' once deployed the root will then be in 
 ?>
 <!-- Header aka nav section is called via require as without it, the page is useless  -->
 <!-- Convert all the links inside the include file as links relative to root, therefore starting with a / -->

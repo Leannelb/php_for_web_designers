@@ -1,3 +1,10 @@
+<?php
+$monthCamel = date('M');
+$monthname = strtolower($monthCamel);
+// This code will get the month name 3 letter formal i.e. jan.
+// This matches an imaes in the images folder that has the extention of the month also
+// This means the month will change, as it is pulled from the server
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,8 +87,9 @@
                         <img src="images/450_2_maidenhair_fern_166585539.jpg" alt="Maidenhair Fern" height="200" width="450"> </a> <a href="#" class="tile border">
                         <p class="overlay">Seasonal Specials</p>
                         <p class="overlay price">Starting at $24.95</p>
-                        <img src="images/450_2_tulip_field_154321412.jpg" alt="Fresh Tulips" height="200" width="450"> </a> </li>
-                </ul>
+                        <img src="images/special_<?php echo $monthname;?>.jpg" alt="Fresh Tulips" height="200" width="450"> </a> </li>
+          <!-- So here the monthname is echoed into the image file path and the image is changed according to the date -->
+          </ul>
             </div>
         </div>
     </div>
