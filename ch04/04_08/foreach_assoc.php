@@ -25,6 +25,12 @@ foreach ($features AS $feature)
 }
 ?>
 <h2>Keys and Values</h2>
-
+<?php 
+foreach ($features AS $key => $value)
+//how KEYS and Values WORK!!
+{
+    echo "<p>The caption for the $key feature is: $value</p>";
+}
+?>
 </body>
 </html>
