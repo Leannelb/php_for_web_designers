@@ -21,8 +21,9 @@ Array
     [3] => orchids
     [4] => irisis
 ) -->
-
 </pre>
+<p>The fourth element is: <?php echo $flowers[3];?></p>
+<!-- Display: The fourth element is: orchids -->
 <link href="../../styles/exercises.css" rel="stylesheet" type="text/css">
 </head>
 
