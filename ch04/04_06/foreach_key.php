@@ -20,8 +20,18 @@ foreach ($flowers AS $flower){
         // What this does is says: if 'roses' (lowercase as it only gets formatted below this loop). Is there, skip on and present the next item
     }
     echo '<li>' . ucFirst($flower) . '</li>';
+    if($flower == 'orchids'){
+        break;
+        // This leaves the loop here and stops execuiting
+    }
+
 }
+// Using foreach is much mkore powerful than implode
+// v easy to traverse array
+// each item in array accessed by being assigned as a temportry variable using the AS keyword
 // ucFirst makes the first letter in the loop uppercase
+// Skip a value: continue
+// Stop a loop: break
 ?>
 <!-- as is actually case insensitive as you can see -->
 <!-- AS represents the array at a specific value in time. It is a temporary variable for the current array item -->
